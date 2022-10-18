@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: large;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to left top, rgb(99, 138, 13), rgb(236, 221, 15));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  transform: translateY(30px);
+  font-family: "Silkscreen", sans-serif;
+  font-size: 30px;
+}
+
+.btn-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.button {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  background-color: rgba(137, 102, 63, 0.3);
+}
+
+.AC {
+  grid-column: span 2;
+}
+
+.display {
+  grid-column: 1/-1;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-direction: column;
+  font-size: 2rem;
+  color: antiquewhite;
+}
+
+.current-num {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.previous-num {
+  padding-right: 0.8rem;
+}
+
+.equal {
+  grid-column: span 2;
+}/*# sourceMappingURL=style.css.map */
